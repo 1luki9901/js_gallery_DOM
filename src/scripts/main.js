@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mainImage = document.querySelector('.main-image img');
 
   gallery.addEventListener('click', (e) => {
-    let target = event.target;
+    let target = e.target;
 
     if (target.tagName === 'A') {
       target = target.querySelector('img');
